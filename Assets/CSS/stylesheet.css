@@ -1,0 +1,19 @@
+/* Add your CSS styles here */
+.question {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.options {
+    list-style-type: none;
+}
+
+.options li {
+    margin-bottom: 10px;
+}
+
+button {
+    margin-top: 10px;
+}
