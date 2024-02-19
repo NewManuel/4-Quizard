@@ -40,3 +40,36 @@ var questionsList = [
         correctAnswer: 'b'
 }
 ];
+
+// This variable is for the nav in the header that says "View Highscore" 
+// var viewHighscore = document.getElementById('score');
+// // This variable is for the timer in the header
+// var clock = document.getElementById('timer');
+// var seconds = 75;
+// var questionContainer = document.getElementById('questionDiv');
+
+//This is for the scoreboard
+
+// This is for the timer
+var timeEl = document.querySelector(".time");
+
+// Selects element by id
+var mainEl = document.getElementById("main");
+
+var secondsLeft = 10;
+
+function setTime() {
+    // Sets interval in variable
+    var timerInterval = setInterval(function () {
+        secondsLeft--;
+        timeEl.textContent = secondsLeft + " seconds left till colorsplosion.";
+
+        if (secondsLeft === 0) {
+            // Stops execution of action at set interval
+            clearInterval(timerInterval);
+            // Calls function to create and append image
+            sendMessage();
+        }
+
+    }, 1000);
+}
