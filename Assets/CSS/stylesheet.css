@@ -2,3 +2,7 @@
 .timer{
     text-align: end;
 }
+
+.hidden {
+    display: none;
+}

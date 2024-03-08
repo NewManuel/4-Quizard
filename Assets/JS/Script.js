@@ -105,7 +105,7 @@ function setTime() {
            // Enable input and save button when timer reaches 0
             showScorePage();
            }
-           secondsCountDown--;
+           secondsCountDown;
         
     }, 1000);
     presentQuestion();
