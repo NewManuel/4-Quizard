@@ -37,7 +37,7 @@ var questionsList = [
             'a: Yes, a star is just a bright light in the sky',
             'b: No, both are essential the same thing',
             "c: Maybe, depending on the type of star it could be considerd a sun especially if it has planets in it's orbit",
-            'd: Neither, both have nothing to do with eac other',
+            'd: Neither, both have nothing to do with each other',
         ],
     
         correctAnswer: 'b: No, both are essential the same thing',
@@ -141,12 +141,20 @@ function checkAnswer(selectedAnswer, correctAnswer) {
     if (selectedAnswer === correctAnswer) {
         // If the answer is correct, present a new question
         // we RESET the TIME GIVEN 
-        secondsCountDown = 10;
+        secondsCountDown = 75;
         presentQuestion();
     } 
     else {
         showScorePage();
     }
+}
+// TODO: This function ends game and concludes the game and tallys a score.
+function gameOver() {
+    clearInterval(timer);
+    quizContainer.classList.add('hide');
+    timerEl.classList.add('hide');
+    endContainer.style.display = "grid";
+    scoreEl.textContent = score;
 }
 
 // TODO: This is for the score page
@@ -161,6 +169,7 @@ function showScorePage() {
 function saveScore() {
     const initials = document.getElementById('initials').value;
     console.log("Score saved: " + initials + " - " + score);
+    localStorage.setItem('score', JSON.stringify(score));
 }
 
 document.getElementById('save-score').addEventListener('click', saveScore);
