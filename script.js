@@ -168,8 +168,16 @@ function showScorePage() {
 
 function saveScore() {
     const initials = document.getElementById('initials').value;
+    initials.trim()
+    if (initials !== "") {
+        alert(`Score saved for ${initials}: ${score}`);
+    } else {
+        alert("Please enter your initials.");
+        return;
+    }
     console.log("Score saved: " + initials + " - " + score);
     localStorage.setItem('score', JSON.stringify(score));
+    window.location.href = "scorepage.html";
 }
 
 document.getElementById('save-score').addEventListener('click', saveScore);
