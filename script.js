@@ -59,21 +59,25 @@ var quizContainer = document.getElementById("quiz");
 var startBtn = document.createElement('button');
 
 // Variable for saving score
-var initialsInput = document.getElementById('initials');; // Initials input field
+var abrevNameInput = document.getElementById('initials');; // Initials input field
 var saveButton = document.getElementById('save-button'); // Save button
 
 
 
 // Name the button "Start Quiz"
 startBtn.textContent = 'Start Quiz';
+
 // This listens for when the "Start Quiz" button is clicked
 startBtn.addEventListener('click', startQuiz);
+
 // Append the start button to the body
 document.body.appendChild(startBtn);
+
 // Create the quiz container class
 // quizContainer.classList.add('quiz');
 // This initially hides the quiz container
 quizContainer.style.display = 'none';
+
 // Append the quiz container to the body
 document.body.appendChild(quizContainer);
 
@@ -159,25 +163,29 @@ function gameOver() {
 
 // TODO: This is for the score page
 // Function to save the score
-
+// This hides the quiz and the timer 
+// It then shows the score su
+// 
 function showScorePage() {
     document.getElementById('quiz').style.display = 'none';
     document.getElementById('score').style.display = 'block';
     document.getElementsByClassName('topPage').style.display = 'none';
 }
 
-function saveScore() {
-    const initials = document.getElementById('initials').value;
-    initials.trim()
-    if (initials !== "") {
-        alert(`Score saved for ${initials}: ${score}`);
+function scoreSubmit() {
+    const abrevName = document.getElementById('abrevName').value;
+    abrevName.value.trim()
+    if (abrevName !== "") {
+        alert(`Score saved for ${abrevName} with ${score} points.`);
     } else {
-        alert("Please enter your initials.");
+        alert("Please enter your Initials to save your score.");
         return;
     }
-    console.log("Score saved: " + initials + " - " + score);
-    localStorage.setItem('score', JSON.stringify(score));
+    let lastScore = JSON.parse(localStorage.getItem('score')) || [];
+    const newScore = { initials, score };
+    lastScore.push(newScore);
+    localStorage.setItem('score', JSON.stringify(lastScore));
     window.location.href = "scorepage.html";
 }
 
-document.getElementById('save-score').addEventListener('click', saveScore);
+document.getElementById('save-score').addEventListener('click', scoreSubmit);
