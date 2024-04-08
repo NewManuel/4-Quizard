@@ -12,7 +12,7 @@ var timerInterval;
 var questionSave = JSON.parse(localStorage.getItem("questionsList"));
 var questionIndex = 0;
 var questionBox = document.getElementById("quiz");
-let time = 75;
+var time = 75;
 
 // Here the quiz is styled to be in the center
 quizBegin.setAttribute("style", "text-align: center");
@@ -74,7 +74,7 @@ function showAfterTime() {
 
 
 // This is the function that will start the quiz when the user hits the btnStart
-btnStart.addEventListener("click", function () {
+btnBegin.addEventListener("click", function () {
     placeTxt.classList.add("hidden");
     questionBox.classList.remove("hidden");
     questionBox.setAttribute("style", "text-align: center; margin: auto; display: flex; flex-direction: column; align-items: center;");
