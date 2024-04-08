@@ -1,4 +1,3 @@
-
 // This is the array of questions that will be asked
 var questionsList = [
     {
@@ -83,4 +82,4 @@ var questionsList = [
     },
 ];
 
-localStorage.setItem("questionsList", JSON.stringify(questions));
+localStorage.setItem("questionsList", JSON.stringify(questionsList));

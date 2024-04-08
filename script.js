@@ -1,6 +1,3 @@
-// Below
-// Below
-// Below
 var quizBegin = document.querySelector("#homepage");
 var headTitle = document.createElement("h1");
 var indepthDetail = document.createElement("p");
@@ -10,9 +7,9 @@ var btnShowScore = document.createElement("button");
 var timer = document.querySelector('#timer');
 var btnStart = document.querySelector('#start');
 var placeTxt = document.querySelector('#homepage');
-var questionBox = document.querySelector('#quiz');
+// var questionBox = document.querySelector('#quiz');
 var timerInterval;
-var questionSave = JSON.parse(localStorage.getItem("questionlist"));
+var questionSave = JSON.parse(localStorage.getItem("questionsList"));
 var questionIndex = 0;
 var questionBox = document.getElementById("quiz");
 let time = 75;
@@ -85,11 +82,7 @@ btnStart.addEventListener("click", function () {
     timerInterval = setInterval(function () {
         time--;
         timer.textContent = time;
-
         showAfterTime();
-        // if (time <= 0) {
-        //     clearInterval(timerInterval);
-        // }
     }, 1000)
     displayQuestion();
 })
@@ -112,8 +105,7 @@ function storeScore(nameAbrev, timerSet) {
 
 
 // Here once the quiz is done this function begins.
-function showScorePg() {
-    
+function showScorePg() {    
     var quizSpot = document.getElementById("quiz");
     var scoreSpot = document.getElementById("score");
 
@@ -183,9 +175,7 @@ function showScorePg() {
 
 // Here the function shows the questions. 
 function displayQuestion() {
-
     questionBox.innerHTML = "";
-
     
     var presentQuestion = questionSave[questionIndex].question;
     var prompt = document.createElement("h3")
@@ -199,7 +189,7 @@ function displayQuestion() {
     var resultBox = document.getElementById("statement");
 
 
-    function handleButtonClick() {
+    function btnClickOn() {
         var choiceCorrect = questionSave[questionIndex].correctAnswer;        
         var responseBack = document.createElement("p");
         // This "if" statement
@@ -236,7 +226,7 @@ function displayQuestion() {
         // The multiple choice answer and there buttons are created. 
         answerButton.classList.add("question-button");
         answerButton.textContent = multiChoice[i];
-        answerButton.addEventListener("click", handleButtonClick);
+        answerButton.addEventListener("click", btnClickOn);
         questionBox.appendChild(answerButton);
     }
 }
