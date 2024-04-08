@@ -1,4 +1,3 @@
-
 // This is the array of questions that will be asked
 var questionsList = [
     {

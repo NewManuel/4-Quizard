@@ -12,7 +12,7 @@ headTitle.appendChild(titleLarHead);
 headTitle.appendChild(titlePar);
 
 
-var scoreList = JSON.parse(localStorage.getItem("scoreList")) || [];
+var scoreArray = JSON.parse(localStorage.getItem("scoreList")) || [];
 
 var leaderBoard = document.querySelector("#previous-scores");
 
@@ -42,19 +42,19 @@ container.style.display = "flex";
 container.style.flexDirection = "column";
 container.style.alignItems = "center";
 
-var pressButton = document.querySelector("#buttons")
+var pressButton = document.querySelector("#home-btn")
 
 pressButton.setAttribute("style", "text-align:center");
 
 var backButton = document.createElement("button");
 
-prevButton.textContent = "Back to Quiz";
+prevButton.textContent = "Return to Quiz";
 prevButton.setAttribute("style", " border: none; border-radius: 20px; cursor: pointer; margin: 20px; padding: 15px;")
 prevButton.setAttribute("style","box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 6px 0px rgba(0, 0, 0, 0.3) 0px 1px 1px 0px; color: hsl(0, 0%, 100%);background-color: #8000ff;")
 
 var refreshButton = document.createElement("button");
 
-refreshButton.textContent = "Reset High Scores";
+refreshButton.textContent = "Reset the Scores";
 refreshButton.setAttribute("style", "border: none;  border-radius: 20px; cursor: pointer; margin: 20px; padding: 15px;")
 refreshButton.setAttribute("style","box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 6px 0px rgba(0, 0, 0, 0.3) 0px 1px 1px 0px; color: hsl(0, 0%, 100%);background-color: #8000ff;")
 
