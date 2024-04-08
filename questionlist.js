@@ -12,7 +12,7 @@ var questionsList = [
         correctAnswer: 'b: New York',
     },
     {
-        question: 'What was the tallest recorded building structure that was later abandoned and unfinshed in the bible?',
+        question: 'What was the tallest recorded building structure in ancient times that was later abandoned and unfinished; also recorded in the bible?',
         answer: [
             'a: Rome Collesium',
             'b: Burg Khalifa',
@@ -24,23 +24,22 @@ var questionsList = [
     {
         question: 'What three things motivate the land migratition of people?',
         answer: [
-            'a: money, power, and respect',
-            'b: democracy, capitalism, and dollars',
-            'c: economics, resources, and better living',
-            'd: war, famine, and religious freedom'
+            'a: Money, power, and respect.',
+            'b: Democracy, capitalism, and dollars.',
+            'c: Economics, resources, and better living.',
+            'd: War, famine, and religious freedom.'
         ],
-        correctAnswer: 'c: economics, resources, and better living',
+        correctAnswer: 'c: Economics, resources, and better living.',
     },
     {
         question: 'Is there a difference between a sun and a star, and why?',
         answer: [
-            'a: Yes, a star is just a bright light in the sky',
-            'b: No, both are essential the same thing',
-            "c: Maybe, depending on the type of star it could be considerd a sun especially if it has planets in it's orbit",
-            'd: Neither, both have nothing to do with each other',
+            'a: Yes, a star is just a bright light in the sky.',
+            'b: No, both are essential the same thing.',
+            "c: Maybe, depending on the type of star it could be considerd a sun especially if it has planets in it's orbit.",
+            'd: Neither, both have nothing to do with each other.',
         ],
-
-        correctAnswer: 'b: No, both are essential the same thing',
+        correctAnswer: 'b: No, both are essential the same thing.',
     },
     {
         question: 'What year did the city of Atlanta in the state of Georgia hold the Summer Olympics?',
@@ -50,41 +49,37 @@ var questionsList = [
             "c: The Summer Olympics was never held there, but the Winter Olympics were in 1995",
             'd: 1990',
         ],
-
         correctAnswer: 'a: 1996',
     },
     {
-        question: 'Is there a difference between a sun and a star, and why?',
+        question: 'What fact about the New York gangster Beanie Sigel is not common known?',
         answer: [
-            'a: Yes, a star is just a bright light in the sky',
-            'b: No, both are essential the same thing',
-            "c: Maybe, depending on the type of star it could be considerd a sun especially if it has planets in it's orbit",
-            'd: Neither, both have nothing to do with each other',
+            'a: He is of Jewish hertiage.',
+            'b: He was associated with the likes of Arnold Rothstein and Lucky Luciano.',
+            "c: He invisioned and contributed to the creation of Las Vegas.",
+            'd: He participated in the illegal sell of alchol during the Prohibation Era.',
         ],
-
-        correctAnswer: 'b: No, both are essential the same thing',
+        correctAnswer: 'b: He invisioned and contributed to the creation of Las Vegas.',
     },
     {
-        question: 'Is there a difference between a sun and a star, and why?',
+        question: 'What occasion corresponds to the longest day of the year?',
         answer: [
-            'a: Yes, a star is just a bright light in the sky',
-            'b: No, both are essential the same thing',
-            "c: Maybe, depending on the type of star it could be considerd a sun especially if it has planets in it's orbit",
-            'd: Neither, both have nothing to do with each other',
+            'a: The peak of winter.',
+            'b: During an eclipse of the sun.',
+            "c: The summer solstice.",
+            'd: The start of spring season.',
         ],
-
-        correctAnswer: 'b: No, both are essential the same thing',
+        correctAnswer: 'c: The summer solstice.',
     },
     {
-        question: 'Is there a difference between a sun and a star, and why?',
+        question: 'What identity document is required to travel to different countries around the world?',
         answer: [
-            'a: Yes, a star is just a bright light in the sky',
-            'b: No, both are essential the same thing',
-            "c: Maybe, depending on the type of star it could be considerd a sun especially if it has planets in it's orbit",
-            'd: Neither, both have nothing to do with each other',
+            'a: A passport.',
+            'b: A driver license.',
+            'c: A social secuirty card',
+            'd: Universal identification card.',
         ],
-
-        correctAnswer: 'b: No, both are essential the same thing',
+        correctAnswer: 'a: A passport.',
     },
 ];
 
