@@ -1,4 +1,4 @@
-# Random Quiz
+# Quizzard
 
 ## PURPOSE
 
@@ -37,5 +37,7 @@ The following animation demonstrates the application functionality:
 
 ### Url
 
-The URL of the deployed application: 
-The URL of the GitHub repository: 
+
+* The URL of the deployed application: https://newmanuel.github.io/4-Quizard/
+
+* The URL of the GitHub repository: https://github.com/NewManuel/4-Quizard
