@@ -1,5 +1,8 @@
 # Quizzard
 
+
+
+
 ## PURPOSE
 
 This application is created to measure the acuity of the tester on random facts.
