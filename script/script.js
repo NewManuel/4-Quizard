@@ -74,7 +74,7 @@ function showAfterTime() {
 
 
 // This is the function that will start the quiz when the user hits the btnStart
-btnBegin.addEventListener("click", function () {
+btnStart.addEventListener("click", function () {
     placeTxt.classList.add("hidden");
     questionBox.classList.remove("hidden");
     questionBox.setAttribute("style", "text-align: center; margin: auto; display: flex; flex-direction: column; align-items: center;");
