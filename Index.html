@@ -6,21 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Quizzard Knowledge</title>
-<!-- Bootstrap is linked here   -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 <!-- Custom CSS styles are linked here -->
-    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="./style/stylesheet.css">
 </head>
 
 <body>
- <!-- Here is where the "View High score" and timer are located  -->
-    <header class="topPage d-flex">
+ <!-- Here is where the "View Score" and timer are located  -->
+    <header class="topPage">
         <h1>Quiz on Random Knowledge</h1>
         <h6 class="timer "></h6>
     </header> 
 
-    <main><!-- The container below is where the questions will be presented -->
+    <main>
+        <!-- The container below is where the questions will be presented -->
+        <div id="homepage">
+        </div>
+
         <div id="quiz" class="hidden">
         </div>
 
@@ -30,13 +31,10 @@
 
         <div id="statement">
         </div>
-
 </main>
-<!-- This is the JavaScript Bootstrap link here -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-            crossorigin="anonymous"></script>
-    <script src="script.js"></script>
-</body>
 
+<!-- This is the JavaScript file link here -->
+    <script src="./script/script.js"></script>
+    <script src="./script/questionlist.js"></script>
+</body>
 </html>

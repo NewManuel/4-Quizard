@@ -4,8 +4,7 @@ var indepthDetail = document.createElement("p");
 var btnBegin = document.createElement("button");
 var timeClock = document.querySelector(".topPage");
 var btnShowScore = document.createElement("button");
-var timer = document.querySelector('#timer');
-var btnStart = document.querySelector('#start');
+var timer = document.querySelector('.timer');
 var placeTxt = document.querySelector('#homepage');
 // var questionBox = document.querySelector('#quiz');
 var timerInterval;
@@ -36,6 +35,8 @@ btnBegin.addEventListener("mouseover", function () {
 btnBegin.addEventListener("mouseout", function () {
     btnBegin.style.boxShadow = "";
 });
+
+// var btnStart = document.querySelector('#start');
 
 // This set the "indepthDetail" as a h1 with a button to to start the quiz. 
 quizBegin.appendChild(headTitle);
@@ -74,7 +75,7 @@ function showAfterTime() {
 
 
 // This is the function that will start the quiz when the user hits the btnStart
-btnStart.addEventListener("click", function () {
+btnBegin.addEventListener("click", function () {
     placeTxt.classList.add("hidden");
     questionBox.classList.remove("hidden");
     questionBox.setAttribute("style", "text-align: center; margin: auto; display: flex; flex-direction: column; align-items: center;");
