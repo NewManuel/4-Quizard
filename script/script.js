@@ -194,7 +194,7 @@ function displayQuestion() {
         var choiceCorrect = questionSave[questionIndex].correctAnswer;        
         var responseBack = document.createElement("p");
         // This "if" statement
-        if (this.textContent === questionSave[questionIndex].choices[choiceCorrect]) {
+        if (this.textContent === choiceCorrect) {
             responseBack.textContent = "Correct!";
         } else {
             responseBack.textContent = "Incorrect!";
@@ -206,7 +206,7 @@ function displayQuestion() {
             responseBack.remove();
         }, 2000);
 
-        if (this.textContent !== questionSave[questionIndex].choices[choiceCorrect]) {
+        if (this.textContent !== choiceCorrect) {
             time -= 10;
         }
 
@@ -220,7 +220,7 @@ function displayQuestion() {
         }
     }
 
-    var multiChoice = questionSave[questionIndex].choices;
+    var multiChoice = questionSave[questionIndex].answer;
     //Here every answer is looped over. 
     for (var i = 0; i < multiChoice.length; i++) {
         var answerButton = document.createElement("button");

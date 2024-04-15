@@ -1,4 +1,4 @@
-var headTitle = document.querySelector("#high-score-title");
+var headTitle = document.querySelector("#scorepage");
 headTitle.setAttribute("style", "text-align:center");
 
 var titleLarHead = document.createElement("h1");
@@ -12,7 +12,7 @@ headTitle.appendChild(titleLarHead);
 headTitle.appendChild(titlePar);
 
 
-var scoreArray = JSON.parse(localStorage.getItem("scoreList")) || [];
+var scoreList = JSON.parse(localStorage.getItem("scoreRecorded")) || [];
 
 var leaderBoard = document.querySelector("#previous-scores");
 
@@ -46,7 +46,7 @@ var pressButton = document.querySelector("#home-btn")
 
 pressButton.setAttribute("style", "text-align:center");
 
-var backButton = document.createElement("button");
+var prevButton = document.createElement("button");
 
 prevButton.textContent = "Return to Quiz";
 prevButton.setAttribute("style", " border: none; border-radius: 20px; cursor: pointer; margin: 20px; padding: 15px;")
@@ -79,5 +79,5 @@ refreshButton.addEventListener("click", function () {
 })
 
 
-buttons.appendChild(prevButton);
-buttons.appendChild(refreshButton);
+pressButton.appendChild(prevButton);
+pressButton.appendChild(refreshButton);
